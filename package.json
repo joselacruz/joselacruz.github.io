@@ -1,0 +1,29 @@
+{
+  "name": "luixlacrux.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "nib": "^1.1.2",
+    "normalize.styl": "^3.0.3",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "stylus": "stylus -c -u nib stylus/styles.styl -o stylesheets/",
+    "stylus:watch": "stylus -w -c -u nib stylus/styles.styl -o stylesheets/",
+    "server": "browser-sync start --config bs-config.js",
+    "start": "npm run stylus && npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luixlacrux/luixlacrux.github.io.git"
+  },
+  "author": "Luis Lacruz <luixlacrux18@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luixlacrux/luixlacrux.github.io/issues"
+  },
+  "homepage": "https://github.com/luixlacrux/luixlacrux.github.io#readme"
+}

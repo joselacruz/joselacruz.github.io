@@ -1,0 +1,29 @@
+.Contact
+  display flex
+  flex-direction column
+  justify-content center
+  padding-bottom 100px
+  .title
+    color black_primary
+  form
+    display flex
+    flex-direction column
+    width 100%
+    max-width 600px
+    div
+      display flex
+      flex-direction column
+      &.send
+        align-items: flex-end;
+        button
+          margin-right 0
+    input,
+    textarea
+      padding 1em
+      border-radius .3em
+      border 1px gray_secundary solid
+      width 100%
+      margin .5em 0
+      outline none
+      &:focus
+        border-color black_primary
