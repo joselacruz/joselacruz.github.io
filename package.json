@@ -7,14 +7,18 @@
     "browser-sync": "^2.18.8",
     "nib": "^1.1.2",
     "normalize.styl": "^3.0.3",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
     "stylus": "^0.54.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  },
   "scripts": {
     "stylus": "stylus -c -u nib stylus/styles.styl -o stylesheets/",
     "stylus:watch": "stylus -w -c -u nib stylus/styles.styl -o stylesheets/",
+    "build": "browserify javascripts/app.js > javascripts/bundle.js",
     "server": "browser-sync start --config bs-config.js",
-    "start": "npm run stylus && npm run server"
+    "start": "npm run stylus && npm run build && npm run server"
   },
   "repository": {
     "type": "git",
