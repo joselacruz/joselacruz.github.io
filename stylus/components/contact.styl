@@ -20,9 +20,22 @@
     textarea
       padding 1em
       border-radius .3em
-      border 1px gray_secundary solid
+      border 2px gray_secundary solid
       width 100%
       margin .5em 0
       outline none
+      transition border .4s ease-in
       &:focus
-        border-color black_primary
+        border-color blue_secundary
+        &:valid
+          border-color green_primary
+        &:invalid
+          border-color red_danger
+      &:valid
+        border-color green_primary
+
+    button
+      &:disabled
+        cursor not-allowed
+        background rgba(#009688, .3)
+        border-color rgba(#009688, .3)

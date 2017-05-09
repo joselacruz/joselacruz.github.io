@@ -4,7 +4,9 @@
   "description": "My personal website",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.16.1",
     "browser-sync": "^2.18.8",
+    "izitoast": "^1.1.1",
     "nib": "^1.1.2",
     "normalize.styl": "^3.0.3",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
@@ -14,8 +16,8 @@
     "browserify": "^14.1.0"
   },
   "scripts": {
-    "stylus": "stylus -c -u nib stylus/styles.styl -o stylesheets/",
-    "stylus:watch": "stylus -w -c -u nib stylus/styles.styl -o stylesheets/",
+    "stylus": "stylus -c --include-css -u nib stylus/styles.styl -o stylesheets/",
+    "stylus:watch": "stylus -w -c --include-css -u nib stylus/styles.styl -o stylesheets/",
     "build": "browserify javascripts/app.js > javascripts/bundle.js",
     "server": "browser-sync start --config bs-config.js",
     "start": "npm run stylus && npm run build && npm run server"
