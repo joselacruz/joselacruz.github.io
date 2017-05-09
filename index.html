@@ -42,6 +42,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../assets/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
@@ -59,14 +60,26 @@
     <header class="Header">
       <div class="wrapper">
         <div class="Header-card">
-          <h1 class="title">Hola Soy Luis Lacruz</h1>
-          <p class="slug">Frontend Developer por pasión</p>
+          <h1 class="title wow zoomInDown" data-wow-delay="0.6s">Hola Soy Luis Lacruz</h1>
+          <p class="slug wow fadeIn" data-wow-delay="1.2s">
+            Frontend Developer por pasión
+          </p>
           <div class="buttons">
-            <a class="btn-dark" data-scroll href="#contact">Contactamé</a>
-            <a class="btn-outline" data-scroll href="#about">Sobre mi</a>
+            <a
+              class="btn-dark wow bounceInRight"
+              data-wow-delay="1.5s"
+              data-scroll href="#contact">
+              Contactamé
+            </a>
+            <a
+              class="btn-outline wow bounceInLeft"
+              data-wow-delay="1.5s"
+              data-scroll href="#about">
+              Sobre mi
+            </a>
           </div>
         </div>
-        <nav class="Header-nav">
+        <nav class="Header-nav wow fadeInDown" data-wow-delay="1.8s">
           <ul class="Header-nav--list">
             <li class="item">
               <a data-scroll href="#about">Sobre mi</a>
@@ -83,7 +96,12 @@
     </header>
 
     <main>
-      <section class="About wrapper" id="about">
+      <section
+        class="About wrapper wow fadeInLeft"
+        data-wow-offset="150"
+        data-wow-duration="1s"
+        data-wow-delay="1.5s"
+        id="about">
         <figure class="About-avatar">
           <img src="/assets/images/face.jpg" alt="Luis Lacruz">
         </figure>
@@ -117,10 +135,14 @@
       </section>
 
       <section class="Project" id="work">
-        <h3 class="title">Proyectos</h3>
-        <span class="title">Click en el proyecto para conocer mas</span>
+        <h3 class="title wow bounceIn" data-wow-offset="100">Proyectos</h3>
+        <span class="title wow bounceIn" data-wow-offset="100">Click en el proyecto para conocer mas</span>
         <div class="Project-container wrapper">
-          <article class="Project-item">
+          <article
+            class="Project-item wow fadeInRight"
+            data-wow-offset="200"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s">
             <h2 class="title">Constructora Casert C.A</h2>
             <figure>
               <img src="../assets/images/casert-2.jpg" alt="Constructora Casert C.A">
@@ -133,7 +155,11 @@
               <a class="btn-outline" href="https://constructoracasert.com.ve" target="_blank">Ver proyecto</a>
             </p>
           </article>
-          <article class="Project-item">
+          <article
+            class="Project-item wow fadeInRight"
+            data-wow-offset="200"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s">
             <h2 class="title">Sfotipy</h2>
             <figure>
               <img src="../assets/images/sfotipy.jpg" alt="" width="250" height="250" alt="Sfotipy">
@@ -146,7 +172,11 @@
               <a class="btn-outline" href="https://github.com/luixlacrux/sfotipy-nodejs" target="_blank">Ver Repositorio</a>
             </p>
           </article>
-          <article class="Project-item">
+          <article
+            class="Project-item wow fadeInRight"
+            data-wow-offset="200"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s">
             <h2 class="title">Marvel Challenge</h2>
             <figure>
               <img src="../assets/images/marvel.jpg" alt="" width="250" height="250" alt="Marvel">
@@ -159,7 +189,11 @@
               <a class="btn-outline" href="https://marvel-84a14.firebaseapp.com/" target="_blank">Ver Proyecto</a>
             </p>
           </article>
-          <article class="Project-item">
+          <article
+            class="Project-item wow fadeInRight"
+            data-wow-offset="200"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s">
             <h2 class="title">React Notes</h2>
             <figure>
               <img src="../assets/images/react-notes.jpg" alt="React Notes">
@@ -172,7 +206,11 @@
               <a class="btn-outline" href="https://keep-notes-c6b14.firebaseapp.com/" target="_blank">Ver proyecto</a>
             </p>
           </article>
-          <article class="Project-item">
+          <article
+            class="Project-item wow fadeInRight"
+            data-wow-offset="200"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s">
             <h2 class="title">Radio Universal</h2>
             <figure>
               <img src="../assets/images/radio-universal.jpg" alt="Radio universal">
@@ -185,7 +223,11 @@
               <a class="btn-outline" href="https://luixlacrux.github.io/radio-universal" target="_blank">Ver proyecto</a>
             </p>
           </article>
-          <article class="Project-item">
+          <article
+            class="Project-item wow fadeInRight"
+            data-wow-offset="200"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s">
             <h2 class="title">PlayPeliculas</h2>
             <figure>
               <img src="../assets/images/playpeliculas.jpg" alt="PlayPeliculas">
@@ -202,19 +244,19 @@
       </section>
 
       <section class="Contact wrapper" id="contact">
-        <h3 class="title">Contacto</h3>
+        <h3 class="title wow bounceIn" data-wow-offset="100">Contacto</h3>
         <form id="contact-form"action="https://formspree.io/luislacruz.dev@gmail.com" method="post" class="Contact-form">
           <input type="hidden" name="_subject" value="Website contact!" />
           <input type="text" name="_gotcha" style="display:none" />
           <div class="field">
-            <input type="text" name="name" placeholder="Tu Nombre" required />
-            <input type="email" name="_replyto" placeholder="Tu Email" required />
+            <input class="wow fadeIn" data-wow-duration="1.4s" type="text" name="name" placeholder="Tu Nombre" required />
+            <input class="wow fadeIn" data-wow-duration="1.4s" type="email" name="_replyto" placeholder="Tu Email" required />
           </div>
           <div class="field">
-            <textarea placeholder="Mensaje..." name="message" cols="15" rows="8" required></textarea>
+            <textarea class="wow fadeIn" data-wow-duration="1.4s" placeholder="Mensaje..." name="message" cols="15" rows="8" required></textarea>
           </div>
           <div class="send">
-            <button id="btn-send" class="btn-dark">Enviar</button>
+            <button id="btn-send" class="btn-dark wow bounceIn" data-wow-duration="1.4s">Enviar</button>
           </div>
         </form>
       </section>
@@ -240,7 +282,10 @@
         </div>
       </footer>
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init()
+    </script>
     <script src="javascripts/bundle.js"></script>
   </body>
 </html>
