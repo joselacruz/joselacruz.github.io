@@ -13,14 +13,16 @@
     "stylus": "^0.54.5"
   },
   "devDependencies": {
-    "browserify": "^14.1.0"
+    "browserify": "^14.1.0",
+    "uglifyify": "^3.0.4"
   },
   "scripts": {
     "stylus": "stylus -c --include-css -u nib stylus/styles.styl -o stylesheets/",
     "stylus:watch": "stylus -w -c --include-css -u nib stylus/styles.styl -o stylesheets/",
     "build": "browserify javascripts/app.js > javascripts/bundle.js",
+    "build:pro": "browserify -g uglifyify javascripts/app.js > javascripts/bundle.js",
     "server": "browser-sync start --config bs-config.js",
-    "start": "npm run stylus && npm run build && npm run server"
+    "start": "npm run stylus && npm run build:pro && npm run server"
   },
   "repository": {
     "type": "git",
